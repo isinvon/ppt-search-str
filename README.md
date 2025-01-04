@@ -13,8 +13,8 @@
 
 ## 界面展示 🖼️
 
-🔗<a href="https://github.com/isinvon/ppt-search-str/releases">
-点击跳转下载 GUI</a>
+<a href="https://github.com/isinvon/ppt-search-str/releases">
+🔗点击跳转下载 GUI</a>
 
 <img src="./image/image.png" alt="gui界面">
 
