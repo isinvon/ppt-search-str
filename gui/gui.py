@@ -86,13 +86,13 @@ def create_gui():
     style_frame(options_frame)
     options_frame.pack(pady=5, padx=10, fill=tk.X)
 
-    full_match_check = tk.Checkbutton(options_frame, text="全字匹配", variable=full_match_var)
-    style_checkbox(full_match_check)
-    full_match_check.pack(side=tk.LEFT, padx=10)
+    # full_match_check = tk.Checkbutton(options_frame, text="全字匹配", variable=full_match_var)
+    # style_checkbox(full_match_check)
+    # full_match_check.pack(side=tk.LEFT, padx=10)
 
-    ignore_case_check = tk.Checkbutton(options_frame, text="不区分大小写", variable=ignore_case_var)
-    style_checkbox(ignore_case_check)
-    ignore_case_check.pack(side=tk.LEFT, padx=10)
+    # ignore_case_check = tk.Checkbutton(options_frame, text="不区分大小写", variable=ignore_case_var)
+    # style_checkbox(ignore_case_check)
+    # ignore_case_check.pack(side=tk.LEFT, padx=10)
 
     search_button = tk.Button(root, text="搜索", command=search)
     style_button(search_button)
