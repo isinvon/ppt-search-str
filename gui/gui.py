@@ -54,18 +54,18 @@ def create_gui():
 
     type_frame = tk.Frame(root, bg="#f9f9f9")
     style_frame(type_frame)
-    type_frame.pack(pady=5)
+    type_frame.pack(pady=5, padx=10, fill=tk.X)
 
     folder_radio = tk.Radiobutton(type_frame, text="文件夹", variable=select_type_var, value="folder")
     style_radiobutton(folder_radio)
-    folder_radio.pack(side=tk.LEFT, padx=5)
+    folder_radio.pack(side=tk.LEFT, padx=10)
 
     file_radio = tk.Radiobutton(type_frame, text="PPTX 文件", variable=select_type_var, value="file")
     style_radiobutton(file_radio)
-    file_radio.pack(side=tk.LEFT, padx=5)
+    file_radio.pack(side=tk.LEFT, padx=10)
 
     folder_label = tk.Label(frame, text="路径:", bg="#f9f9f9", font=("Arial", 10))
-    folder_label.pack(side=tk.LEFT)
+    folder_label.pack(side=tk.LEFT, padx=10)
 
     folder_entry = tk.Entry(frame, textvariable=path_var, width=50)
     style_entry(folder_entry)
@@ -73,10 +73,10 @@ def create_gui():
 
     browse_button = tk.Button(frame, text="浏览", command=browse_file_or_folder)
     style_button(browse_button)
-    browse_button.pack(side=tk.LEFT)
+    browse_button.pack(side=tk.LEFT, padx=10)
 
     term_label = tk.Label(root, text="搜索字符:", bg="#f9f9f9", font=("Arial", 10))
-    term_label.pack()
+    term_label.pack(pady=5)
 
     term_entry = tk.Entry(root, textvariable=search_term_var, width=50)
     style_entry(term_entry)
@@ -84,19 +84,19 @@ def create_gui():
 
     options_frame = tk.Frame(root, bg="#f9f9f9")
     style_frame(options_frame)
-    options_frame.pack(pady=5)
+    options_frame.pack(pady=5, padx=10, fill=tk.X)
 
     full_match_check = tk.Checkbutton(options_frame, text="全字匹配", variable=full_match_var)
     style_checkbox(full_match_check)
-    full_match_check.pack(side=tk.LEFT, padx=5)
+    full_match_check.pack(side=tk.LEFT, padx=10)
 
     ignore_case_check = tk.Checkbutton(options_frame, text="不区分大小写", variable=ignore_case_var)
     style_checkbox(ignore_case_check)
-    ignore_case_check.pack(side=tk.LEFT, padx=5)
+    ignore_case_check.pack(side=tk.LEFT, padx=10)
 
     search_button = tk.Button(root, text="搜索", command=search)
     style_button(search_button)
-    search_button.pack(pady=5)
+    search_button.pack(pady=10)
 
     result_text = tk.Text(root, height=15, wrap=tk.WORD, bg="#fff", fg="#333", font=("Arial", 10))
     result_text.configure(
