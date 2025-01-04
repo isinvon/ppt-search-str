@@ -56,6 +56,19 @@ def style_checkbox(checkbox):
         relief="flat"
     )
 
+def style_radiobutton(radiobutton):
+    radiobutton.configure(
+        bg="#f9f9f9",
+        activebackground="#f9f9f9",
+        selectcolor="#4CAF50",
+        font=("Arial", 10),
+        borderwidth=0
+    )
+    radiobutton.configure(
+        highlightthickness=1,
+        highlightbackground="#4CAF50",
+        relief="flat"
+    )
 
 def style_frame(frame):
     frame.configure(
