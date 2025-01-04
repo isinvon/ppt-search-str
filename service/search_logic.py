@@ -39,8 +39,8 @@ def search_in_ppt(file_or_folder_path, search_term, is_folder=True):
                         for match in matches:
                             start_idx = match.start()
                             # 提取匹配行的上下文，最多包含8个字符
-                            line_start = max(start_idx - 4, 0)
-                            line_end = min(start_idx + 4 + len(search_term), len(text))
+                            line_start = max(start_idx - 8, 0)
+                            line_end = min(start_idx + 8 + len(search_term), len(text))
                             matching_text = text[line_start:line_end]
 
                             # 记录匹配信息：文件名 - 页码 - 匹配内容
